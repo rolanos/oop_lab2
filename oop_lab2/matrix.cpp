@@ -125,7 +125,6 @@ int Matrix::getRank() {
                         mat.matrix[row][row];
                     for (int i = 0; i < rank; i++)
                         mat.matrix[column][i] = mat.matrix[column][i] - mult * mat.matrix[row][i];
-                    mat.print();
                 }
             }
         }
