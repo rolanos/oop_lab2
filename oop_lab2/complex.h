@@ -16,7 +16,6 @@ public:
 	TComplex operator* (TComplex);
 	TComplex operator* (int);
 	TComplex operator/ (TComplex);
-	TComplex operator-= (TComplex);
 	TComplex operator +(const TComplex&);
 	TComplex operator -(const TComplex&);
 	

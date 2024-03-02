@@ -36,11 +36,6 @@ TComplex TComplex::operator/(TComplex complex)
 	return result;
 }
 
-TComplex TComplex::operator-=(TComplex complex)
-{
-	return this - &complex;
-}
-
 TComplex TComplex::operator+(const TComplex& complex)
 {
 	TComplex result;

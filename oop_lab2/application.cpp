@@ -67,7 +67,8 @@ void Application::matrixInit() {
 }
 
 void Application::determinantPrint() {
-	cout << "Matrix determinant - " << matrix->calculateDetermenant() << endl;
+	number value = matrix->calculateDetermenant();
+	cout << "Matrix determinant - " << value << endl;
 }
 
 void Application::transposePrint() {

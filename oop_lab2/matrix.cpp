@@ -68,7 +68,9 @@ number Matrix::calculateDetermenant() {
             }
         }
         if (pivot != i) {
+            mat.print();
             swap(mat.matrix[i], mat.matrix[pivot]);
+            mat.print();
             determenant = determenant * (-1);
         }
 
@@ -82,7 +84,7 @@ number Matrix::calculateDetermenant() {
             number fact = mat.matrix[j][i] / mat.matrix[i][i];
 
             for (int k = i + 1; k < dimension; k++) {
-                mat.matrix[j][k] -= fact * mat.matrix[i][k];
+                mat.matrix[j][k] = mat.matrix[j][k] - fact * mat.matrix[i][k];
             }
         }
     }
